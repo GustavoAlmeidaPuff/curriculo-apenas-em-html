@@ -3,50 +3,116 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Curriculo</title>
+    <title>Currículo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            color: #333;
+        }
+        form {
+            background-color: #fff;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        div {
+            margin-bottom: 15px;
+            width: 100%;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        input[type="number"] {
+            width: calc(100% - 22px);
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            background-color: #5cb85c;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: 0.2s ease;
+        }
+        .botao {
+            width: 10%;
+        }
+        button:hover {
+            background-color: #333;
+        }
+    </style>
 </head>
 <body>
     <h1>Vagas Abertas!</h1>
     <p>Vagas disponíveis para o mês de dezembro.</p>
-        <p><strong>Preencha o formulário:</strong></p>
-        <form>
-            <p><strong>Dados pesssoais:</strong></p>
-            <div>
+    <p><strong>Preencha o formulário:</strong></p>
+    <form>
+        <p><strong>Dados pessoais:</strong></p>
+        <div>
             <label for="nome">Nome:</label>
             <input type="text" name="nome" id="nome" required>
+        </div>
+        <div>
             <label for="email">Email:</label>
             <input type="email" name="email" id="email" required>
+        </div>
+        <div>
             <label for="telefone">Telefone:</label>
             <input type="tel" name="telefone" id="telefone">
+        </div>
+        <div>
             <label for="idade">Idade:</label>
             <input type="number" name="idade" id="idade" required>
-            <label for="gênero">Sexo:</label>
+        </div>
+        <div>
+            <label for="sexo">Sexo:</label>
             <input type="text" name="sexo" id="sexo" required>
-            <br>
+        </div>
+        <div>
             <label for="estado">Estado:</label>
             <input type="text" name="estado" id="estado" required>
-            <label for="endereço">Endereço:</label>
-            <input type="text" name="endereço" id="endereço" required>
-            </div>
-            <p><strong>Dados profissionais:</strong></p>
-            <div>
-                <label for="profissão">Profissão:</label>
-                <input type="text" name="profissão" id="profissão" required>
-                <label for="Experiência">Experiência:</label>
-                <input type="text" name="experiência" id="experiência" required>
-                <label for="formação">Formação:</label>
-                <input type="text" name="formação" id="formação" required>
-                <label for="estágios">Estágios:</label>
-                <input type="text" name="estágios" id="estágios" required>
-            </div>
-            <p><strong>Clique aqui para enviar</strong></p>
-            <div>
-                <button>Enviar</button>
-
-            </div>
-
-            
-        </form>
-    
+        </div>
+        <div>
+            <label for="endereco">Endereço:</label>
+            <input type="text" name="endereco" id="endereco" required>
+        </div>
+        <p><strong>Dados profissionais:</strong></p>
+        <div>
+            <label for="profissao">Profissão:</label>
+            <input type="text" name="profissao" id="profissao" required>
+        </div>
+        <div>
+            <label for="experiencia">Experiência:</label>
+            <input type="text" name="experiencia" id="experiencia" required>
+        </div>
+        <div>
+            <label for="formacao">Formação:</label>
+            <input type="text" name="formacao" id="formacao" required>
+        </div>
+        <div>
+            <label for="estagios">Estágios:</label>
+            <input type="text" name="estagios" id="estagios" required>
+        </div>
+        <div class="botao">
+            <button type="submit">Enviar</button>
+        </div>
+    </form>
 </body>
 </html>
